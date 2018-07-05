@@ -7,7 +7,7 @@ https://docs.djangoproject.com/en/2.0/intro/tutorial02/
 
 
 
-##Personal Notes##
+**Personal Notes**
 
 When interacting with the api, use Django's shell
 
