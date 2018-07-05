@@ -1,8 +1,9 @@
 continue here :
 
-"Use generic views: Less code is better"
+Next up, creating automated tests.
+"Introducing automated testing"
 
-https://docs.djangoproject.com/en/2.0/intro/tutorial04/
+https://docs.djangoproject.com/en/2.0/intro/tutorial05/
 
 
 
