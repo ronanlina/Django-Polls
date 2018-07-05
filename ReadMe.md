@@ -1,8 +1,8 @@
 continue here :
 
-"Playing with the API"
+"Use generic views: Less code is better"
 
-https://docs.djangoproject.com/en/2.0/intro/tutorial02/
+https://docs.djangoproject.com/en/2.0/intro/tutorial04/
 
 
 
