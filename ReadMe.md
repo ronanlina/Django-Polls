@@ -1,9 +1,9 @@
 continue here :
 
-Next up, creating automated tests.
-"Introducing automated testing"
+Next up, customizing.
+"Customize your app’s look and feel"
 
-https://docs.djangoproject.com/en/2.0/intro/tutorial05/
+https://docs.djangoproject.com/en/2.0/intro/tutorial06/
 
 
 
