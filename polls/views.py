@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect #Don't forget to incl
 from django.template import loader #used for getting the html files to be displayed
 from django.urls import reverse
 from django.views import generic
+from django.utils import timezone
 
 from .models import Choice, Question
 
@@ -12,7 +13,9 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         """returns the last five published questions."""
-        return Question.objects.order_by('-pub_date')[:5]
+        return Question.objects.filter(
+            pub_date__lte = timezone.now()
+        ).order_by('-pub_date')[:5]
     # latest_question_list = Question.objects.order_by('-pub_date')[:5]
 
     # #getting the page
