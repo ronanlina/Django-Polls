@@ -3,22 +3,10 @@ import datetime
 from django.db import models
 from django.utils import timezone
 
-# Create your models here.
-# This is where we create database models (ORM)
-# Take notes later about migrating models.
-# Migrations are how Django stores changes to your models (and thus your database schema) - they’re just files on disk.
-# python manage.py migrate. migrates database models to sql databases.
-
 class Question(models.Model):
     #table column           datatype    length/format/etc.
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
-    
-    #It’s important to add __str__() methods to your models, 
-    # not only for your own convenience when dealing with the interactive prompt,
-    # but also because objects’ representations are used throughout Django’s 
-    # automatically-generated admin.
-    # -djangoproject
     
     def __str__(self):
         return self.question_text
